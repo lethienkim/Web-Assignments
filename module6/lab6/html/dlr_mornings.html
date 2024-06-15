@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!--
+      New Perspectives on HTML5 and CSS3, 8th Edition
+      Tutorial 6
+      Review Assignment
+
+      DLR Morning Schedule
+      Author: Thienkim Le
+      Date:   02/28/2024
+
+      Filename:   dlr_mornings.html
+
+   -->
+   
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title>DLR Morning Schedule</title>
+   <link href="../css/dlr_reset2.css" rel="stylesheet" />
+   <link href="../css/dlr_styles2.css" rel="stylesheet" />
+   <!-- Link to dlr_tables2.css -->
+    <link rel="stylesheet" href="../css/dlr_tables2.css">
+    <!-- Link to dlr_columns2.css -->
+    <link rel="stylesheet" href="../css/dlr_columns2.css">
+      
+</head>
+
+<body>
+   <header>
+      <h1>Listener Supported <em>Since</em> 1975</h1>
+      <nav>
+         <a id="navicon" href="#"><img src="../images/dlr_navicon2.png" alt="" /></a>
+         <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Schedule</a></li>
+            <li><a href="#">Programs</a></li>
+            <li><a href="#">Music</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Listen Live</a></li>
+            <li><a href="#">Contact Us</a></li>
+         </ul>
+      </nav>
+   </header>
+   
+   <div id="container">
+   
+      <section id="main"> 
+         <img src="../images/dlr_logo2.png" alt="DLR" />
+         <h2>DLR Morning Schedule</h2>
+         <p>DLR airs listener-supported public radio in Bismarck, North Dakota from 
+            5:00 a.m. to 10:30 p.m. <br />You can <a href="#">Listen Live</a> to streaming audio 
+            of our broadcast or download programs from our <a href="#">Podcast</a>. 
+            <br />Please refer below for our current morning schedule.</p>
+         <!-- Web Table -->
+         <table class="programs">
+
+         <caption>All Times Central</caption>
+         
+         <colgroup>
+           <col class="timeColumn">  
+           <col class="wDayColumns" span="5">
+           <col class="wEndColumns" span="2"> 
+         </colgroup>
+         
+         <thead>
+           <tr>
+             <th></th>
+             <th>Mon</th>
+             <th>Tue</th>
+             <th>Wed</th>
+             <th>Thu</th>
+             <th>Fri</th>
+             <th>Sat</th>
+             <th>Sun</th>
+           </tr>  
+         </thead>
+         
+         <tbody>
+           <tr>
+           
+             <th>5:00am</th>
+             <td rowspan="4" colspan="5" class="spanned">Dean Air</td>
+             <td rowspan="4" class="spanned">Dean Air</td>
+             <td rowspan="2" class="spanned">Sunday Magazine</td>
+           </tr>
+           
+           <tr>
+             <th>5:30am</th>
+            
+           </tr>
+           
+           <tr>
+             <th>6:00am</th>
+             <td rowspan="2" class="spanned">Weeken Reflections</td>
+            </tr>
+           
+          <tr>
+             <th>6:30am</th>
+            
+           </tr>
+           
+           <tr>
+             <th>7:00am</th>
+             <td colspan="5" class="spanned">Local News</td>
+             <td rowspan="2" class="spanned">Weekend Wrap</td>
+             <td rowspan="2" class="spanned">Radio U</td>
+             <td></td>
+           </tr>
+           
+           <tr>
+             <th>7:30am</th>
+             <td colspan="5" class="spanned">World News Feed</td>
+                          
+           </tr>
+           <tr>
+             <th>8:00am</th>
+             <td rowspan="4" colspan="5" class="spanned">Classical Rocks</td>
+             <td rowspan="3" class="spanned">What can you says?</td>
+             <td rowspan="4" class="spanned">University on the Air</td>
+           </tr>
+           <tr>
+             <th>8:30am</th>
+             
+           </tr>
+           <tr>
+             <th>9:00am</th>
+             
+           </tr>
+           <tr>
+             <th>9:30am</th>
+             <td rowspan="3" class="spanned">Animal Talk</td>
+            
+           </tr>
+           <tr>
+             <th>10:00am</th>
+             <td rowspan="4" colspan="5" class="spanned">Symphony City</td>
+             <td>World Play</td>
+           </tr>
+           
+           <tr>
+             <th>10:30am</th>
+             <td>Brian Stew</td>
+           </tr>
+           
+           <tr>
+             <th>11:00am</th>
+             <td rowspan="3" class="spanned">Opera Live fron the East Coast</td>
+             <td>The Inner Mind</td>
+           </tr>
+           
+           <tr>
+             <th>11:30am</th>
+             <td>Grammar Rule II</td>
+           </tr>
+           
+           <tr>
+             <th>12:00am</th>
+             <td colspan="5" class="spanned">Book Club</td>
+             <td>Weeken Wrap</td>
+           </tr>
+         
+         </tbody>
+         
+         <tfoot>
+           <tr>
+             <td colspan="8">Support your Public Radio Station</td> 
+           </tr>
+         </tfoot>
+         
+         </table>
+
+      </section>
+      
+   </div>
+   
+   <footer>
+      DLR &#183; 4300 Magnolia Lane &#183; Bismarck, ND 58504 &#183; (701) 555 - 5611
+   </footer>
+</body>
+
+</html>

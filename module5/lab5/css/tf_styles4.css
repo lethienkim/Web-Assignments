@@ -1,0 +1,134 @@
+@charset "utf-8";
+/*
+   New Perspectives on HTML5 and CSS3, 8th Edition
+   Tutorial 5
+   Review Assignment
+   
+   Author:   
+   Date:     
+      
+   Filename: tf_styles4.css
+
+   This file contains the screen styles used with the Trusted
+   Friends blog tips
+
+*/
+
+
+/* Import Basic Design Styles Used on All Screens */
+
+@import url("../css/tf_designs.css");
+
+
+/* General Flex Styles */
+body {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+ }
+ 
+ #left {
+   flex: 1 8 130px;
+ }
+ 
+ /* Style rule for the right section */
+#right {
+   flex: 8 1 351px;
+ }
+ 
+ /* Style rule for the section element with class ID of tips */
+ section.tips {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+ }
+ 
+ /* Style rule for the article element within the tips section */
+ section.tips article {
+   flex: 2 1 351px;
+ }
+ 
+ /* Style rule for the biographical asides within each tips section */
+ section.tips aside {
+   flex: 1 2 250px;
+ }
+ 
+ /* Style rule for the horizontal navigation list */
+ nav.horizontal ul {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+ }
+ 
+
+/* ===============================
+	Mobile Devices: 0 to 480px 
+   ===============================
+*/
+	/* Media query for screen devices with a maximum width of 480 pixels */
+@media screen and (max-width: 480px) {
+   /* Style rule for the vertical list of links to archived parenting tips */
+   nav.vertical ul {
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+     height: 240px;
+   }
+ 
+   /* Give the section element with ID of left a flex order value of 99 */
+   #left {
+     order: 99;
+   }
+ 
+   /* Give the body > footer selector an order value of 100 */
+   body > footer {
+     order: 100;
+   }
+ 
+   /* Display the navicon */
+   a#navicon {
+     display: block;
+   }
+ 
+   /* Hide the horizontal navigation list */
+   nav.horizontal ul {
+     display: none;
+   }
+ 
+   /* Display the navigation list contents in response to hover or touch */
+   a#navicon:hover + ul,
+   nav.horizontal ul:hover {
+     display: block;
+   }
+ }
+
+/* ============================================
+	Tablet and Desktop Devices: 481px or more 
+   ============================================
+*/
+/* Media query for screen devices with a width of at least 481 pixels */
+@media screen and (min-width: 481px) {
+   /* Style rule for the ul element within the horizontal navigation list */
+   nav.horizontal ul {
+     height: 160px;
+   }
+ }
+ @media print {
+
+   body {
+     background-color: #fff;
+     color: #000; 
+   }
+ 
+   h1, h2, h3 {
+     font-size: 14pt;
+   }
+ 
+   #header, #footer {
+     display: none;
+   }
+ 
+ }
+ 
+
+

@@ -1,0 +1,124 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 8th Edition
+   Tutorial 5
+   Review Assignment
+   
+   Author:   Thienkim Le
+   Date:     02/22/2024
+   
+   Filename: tf_print2.css
+
+   This file contains the printer styles used with the Trusted
+   Friends Parents Tips page
+
+*/
+
+/* Hidden Objects */
+
+/* Hide all navigation lists */
+nav {
+   display: none !important;
+ }
+ 
+ /* Hide the h1 heading in the body header */
+ body > header h1 {
+   display: none !important;
+ }
+ 
+ /* Hide the left section element */
+ #left {
+   display: none !important;
+ }
+ 
+ /* Hide the body footer */
+ body > footer {
+   display: none !important;
+ }
+ 
+/* Page Box Styles */
+
+body {
+   /* Set the page size to 8.5 inches by 11 inches */
+   width: 8.5in;
+   height: 11in;
+   
+   /* Set the margin to 0.5 inches */
+   margin: 0.5in;
+ }
+ 
+/* Header Styles */
+
+header img.logo {
+   display: block;
+   width: 100%;
+ }
+
+/* Typography Styles */
+/* Headers within the article element */
+article header {
+   margin-bottom: 0.2in;
+ }
+ 
+ /* h1 headings within the article element */
+ article h1 {
+   font-size: 24pt;
+   line-height: 26pt;
+ }
+ 
+ /* Aside element */
+ aside {
+   background-color: rgb(211, 211, 211);
+   margin-top: 0.3in;
+ }
+ 
+ /* h1 headings in aside elements */
+ aside h1 {
+   font-size: 18pt;
+   line-height: 20pt;
+ }
+ 
+ /* Images within aside elements */
+ aside img {
+   width: 0.8in;
+ }
+ 
+ /* Paragraphs */
+ p {
+   font-size: 12pt;
+   margin-top: 0.1in;
+   margin-bottom: 0.1in;
+ }
+
+/* Hypertext Styles */
+/* Display hypertext links in black with no underline */
+a {
+   color: black;
+   text-decoration: none;
+ }
+ 
+ /* Display the text of the URL after the hypertext link in bold with word-wrap property set to break-word */
+ a:after {
+   content: " (" attr(href) ")";
+   font-weight: bold;
+   white-space: normal;
+   word-wrap: break-word;
+ }
+
+/* Page Break Styles */
+/* Insert page breaks after every aside element */
+aside {
+   page-break-after: always;
+ }
+ 
+ /* Never allow a page break within an ol, ul, or img element */
+ ol, ul, img {
+   page-break-inside: avoid;
+ }
+ 
+ /* Set the size of widows and orphans within paragraphs to 3 lines each */
+ p {
+   widows: 3;
+   orphans: 3;
+ }
