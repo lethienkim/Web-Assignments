@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 4
+   Case Problem 4
+   
+   Browyer Realty Layout Styles
+   Author: Thienkim Le
+   Date:   02/14/2024
+	
+   Filename: br_styles.css
+
+*/
+
+/* HTML Styles */
+html {
+   background-image: url('../images/br_paper.png');
+   /* Additional background properties can be added if needed */
+}
+.bordered-section {
+    border: 2px solid #ccc;
+    border-radius: 20px; /* Apply border radius for curved edges */
+    padding: 20px;
+}
+/* Apply box shadow to a page element */
+.bordered-section {
+    border: 2px solid #ccc;
+    border-radius: 20px; /* Apply border radius for curved edges */
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, and color */
+}
+/* Apply text shadow to a section of element text */
+.text-shadow-element {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, and color */
+}
+/* Apply a background featuring both linear and radial gradients */
+.background-gradient {
+    background: 
+        /* Linear gradient */
+        linear-gradient(to bottom, #ff8a00, #e52e71),
+        /* Radial gradient */
+        radial-gradient(circle at top right, #4a4e69, #2b2e4a);
+}
+/* Apply a transformation to the element */
+.transformed-element {
+    transform: rotate(45deg) scale(1.5) skewX(20deg) translateY(20px);
+}
+/* Apply a filter to the element */
+.filtered-element {
+    filter: blur(5px) brightness(80%) contrast(120%) grayscale(30%) hue-rotate(90deg) saturate(150%);
+}
+
+
+
+
+

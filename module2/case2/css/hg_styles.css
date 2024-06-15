@@ -1,0 +1,110 @@
+/* Define the character encoding */
+@charset "UTF-8";
+
+/* Import the web fonts (replace 'font1' and 'font2' with the actual font names) */
+@import url('https://fonts.googleapis.com/css?family=Font1|Font2&display=swap');
+
+/* Global Styles */
+
+/* Set the default font family, background color, and text color for the entire page */
+body {
+  font-family: 'Font1', sans-serif; /* Use Font1 and fallback to sans-serif */
+  background-color: #f0f0f0; /* Light gray background */
+  color: #333; /* Dark gray text color */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+/* Header Styles */
+
+/* Style the header with a blue background, white text, and centered content */
+header {
+  background-color: #4285f4; /* Google blue color */
+  color: #ffffff; /* White text color */
+  padding: 15px; /* Add padding around header content */
+  text-align: center; /* Center align header text */
+}
+
+/* Navigation Styles */
+
+/* Style the navigation bar with a dark background */
+nav {
+  background-color: #333; /* Dark background color */
+}
+
+/* Style the navigation list to remove default list styles and set display */
+nav ul {
+  list-style: none; /* Remove list bullet points */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+/* Style each navigation item to display inline and add spacing */
+nav li {
+  display: inline-block; /* Display items in a row */
+  margin-right: 15px; /* Add right margin to create space between items */
+}
+
+/* Style navigation links with white text and remove default underlines */
+nav a {
+  color: #ffffff; /* White text color */
+  text-decoration: none; /* Remove underlines from links */
+  padding: 10px; /* Add padding around link text */
+}
+
+/* Change link color on hover to provide feedback */
+nav a:hover {
+  background-color: #555; /* Darker color on hover */
+}
+
+/* Content Styles */
+
+/* Add margin around each content section */
+section {
+  margin: 20px; /* Add space around each section */
+}
+
+/* Style h2 headings with Google blue color */
+h2 {
+  color: #4285f4; /* Google blue color for heading text */
+}
+
+/* Style paragraphs with increased line height for better readability */
+p {
+  line-height: 1.5; /* 1.5 times the font size for line spacing */
+}
+
+/* Style strong elements with red color for emphasis */
+strong {
+  color: #ea4335; /* Google red color for strong emphasis */
+}
+
+/* Footer Styles */
+
+/* Style the footer with a blue background, white text, padding, and centered content */
+footer {
+  background-color: #4285f4; /* Google blue color */
+  color: #ffffff; /* White text color */
+  padding: 10px; /* Add padding around footer content */
+  text-align: center; /* Center align footer text */
+}
+
+/* Styles for links in the content */
+
+/* Style links in the content with a dark blue color */
+a {
+  color: #1a0dab; /* Dark blue color for links */
+}
+
+/* Change link color on hover to provide feedback */
+a:hover {
+  text-decoration: underline; /* Underline links on hover for feedback */
+}
+
+/* Additional Styles */
+
+/* Add a custom symbol before each h2 heading in the content */
+section h2::before {
+  content: "➤ "; /* Add a right-pointing arrow before each h2 heading */
+  color: #4285f4; /* Match the Google blue color */
+}

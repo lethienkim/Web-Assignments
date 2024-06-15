@@ -1,0 +1,92 @@
+/*
+   Style Sheet for the Pandaisia Chocolates Monthly Specials
+   Author: Thienkim Le  
+   Date:   02/08/24
+*/
+
+/* Page Body Styles */
+body {
+  width: 95%;
+  min-width: 640px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+
+/* Image Styles */
+img {
+   display: block; /* Display images as blocks */
+   width: 100%; /* Set width to 100% */
+}
+
+/* Horizontal Navigation Styles */
+.nav-list li {
+  float: left;
+  width: 16.66%; /* Distribute list items equally */
+}
+
+.nav-list li a {
+  display: block;
+}
+
+
+/* Grid Styles */
+body {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+header, footer {
+  grid-column: 1 / -1;
+}
+
+#sub {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Specials Styles */
+.specials {
+  min-height: 400px;
+  border: 1px dashed rgb(71, 52, 29);
+}
+
+
+/* Award Styles */
+aside {
+  position: relative;
+  height: 650px;
+  overflow: auto;
+}
+
+.awards div {
+  position: absolute;
+  width: 30%;
+}
+
+#award1 {
+  top: 80px;
+  left: 5%;
+}
+
+#award2 {
+  top: 280px;
+  left: 60%;
+}
+
+#award3 {
+  top: 400px;
+  left: 20%;
+}
+
+#award4 {
+  top: 630px;
+  left: 45%;
+}
+
+#award5 {
+  top: 750px;
+  left: 5%;
+}
+
