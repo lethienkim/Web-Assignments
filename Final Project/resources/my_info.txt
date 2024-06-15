@@ -1,0 +1,32 @@
+Home
+====================================
+Hello, and welcome to my personal website!
+Explore ThienKim Le’s world of software development! Discover my skills, projects, and experiences on my personal website.
+====================================
+
+About Me
+====================================
+As a seasoned software developer, I’ve dedicated myself to mastering various programming languages, frameworks, and technologies. Through this website, I aim to share my journey, insights, and expertise with fellow enthusiasts, potential employers, clients, and collaborators.
+
+Feel free to explore my portfolio, read my blog, and get in touch if you’d like to collaborate or learn more about my work. Thank you for visiting, and I hope you find inspiration and valuable insights during your time here.
+====================================
+
+Portfolio
+====================================
+Explore My Portfolio
+Welcome to my portfolio! Here, you’ll find a curated collection of projects that showcase my skills, expertise, and creativity as a software developer. From web applications and mobile apps to open-source contributions and personal projects, each endeavor represents a unique challenge and an opportunity for growth.
+
+Feel free to browse through my portfolio and explore the projects that pique your interest. If you have any questions or would like to learn more about a specific project, don’t hesitate to reach out. I’m always eager to share my experiences and insights with fellow enthusiasts and potential collaborators
+
+Feel free to browse through my portfolio and explore the projects that pique your interest. If you have any questions or would like to learn more about a specific project, don’t hesitate to reach out. I’m always eager to share my experiences and insights with fellow enthusiasts and potential collaborators
+====================================
+
+Contact Me
+====================================
+Get in Touch
+Thank you for visiting my website! If you have any questions, inquiries, or would like to discuss a potential collaboration, please don’t hesitate to get in touch. I’m always open to new opportunities and would love to hear from you.
+
+You can reach me via email at thienkim.le@g.austincc.edu or connect with me on LinkedIn https://www.linkedin.com/in/thienkim-le/. Alternatively, you can use the contact form below to send me a message directly.
+
+I look forward to connecting with you and exploring how we can work together to bring your ideas to life. Thank you for considering me for your project, and I hope to hear from you soon.
+====================================

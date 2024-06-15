@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!--
+         New Perspectives on HTML5 and CSS3
+         Assignment 9.1 - Review Session 9.1 Quick Check
+         Review Assignment
+   
+         Review Session 9.1 Quick Check
+         Author: Thienkim Le  
+         Date:   04/24/2024
+   
+         Filename: Review Session 9.1 Quick Check
+   
+ <meta charset="UTF-8">
+    <title>Project Development 2</title>
+    
+    
+     <!-- CSS to remove underline from hyperlinks and set font color to black -->
+    <style>
+        a {
+            text-decoration: none; /* Removes underline */
+            color: black; /* Sets font color to black */
+        }
+        
+        body {
+            color: black; /* Sets font color of the body to black */
+        }
+    </style>
+    
+</head>
+
+<body>
+    <header>
+    <a href="quickcheck.html">
+           
+    </header>
+        <h2>Review Session 9.1 Quick Check</h2>
+    
+        <div class="question">
+        <h3>1. What is a server-side program? What is a client-side program?</h3>
+        <p>
+         A server-side program is a program that runs on a server computer and responds to requests from client computers. It typically involves processing requests, accessing databases, performing calculations, and generating dynamic content that is then sent back to the client.
+         Examples of server-side programming languages include PHP, Python with frameworks like Django or Flask, Ruby on Rails, Node.js, and Java with frameworks like Spring.
+        </p>
+        <p>
+         On the other hand, a client-side program is a program that runs on the client's computer or device, typically within a web browser. It interacts with the user interface, handles user inputs, and may perform some processing or manipulation of data locally.
+         Client-side programs are often written in languages like JavaScript, HTML, and CSS. They can also utilize client-side frameworks and libraries like React, Angular, and Vue.js to build more complex and interactive web applications.
+        </p>
+         </div>
+ 
+      <div class="question">
+    <h3>2. Provide code to attach your HTML file to a script located in the tny_functions.js file. Assume that the script file is loaded asynchronously.</h3>
+    <pre>
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang="en"&gt;
+        &lt;head&gt;
+            &lt;meta charset="UTF-8"&gt;
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+            &lt;title>Your HTML Title&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+        
+            &lt;!-- Your HTML content goes here --&gt;
+        
+            &lt;!-- Script tag to load tny_functions.js asynchronously --&gt;
+            &lt;script defer src="tny_functions.js"&gt;&lt;/script&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+    </pre>
+</div>
+
+        
+        <div class="question">
+        <h3>3.	What is the difference between asynchronously loading a script file and deferring the loading of the script file?</h3>
+            <p>Asynchronously loading a script file and deferring the loading of a script file are two different approaches to how scripts are loaded and executed in a web page:</p>
+            <p>a.	Asynchronously Loading a Script File: </p>
+            <ul>
+                <li>When a script is loaded asynchronously, it means that the script is downloaded in the background while the HTML parsing continues.</li>
+                <li>As soon as the script is downloaded, it's executed, which means it can interrupt the HTML parsing and execute immediately.</li>
+                <li>A•	Asynchronous loading is typically achieved by using the async attribute in the script tag, like this: <script async src="script.js"></script>.</li>
+                <li>The main advantage of asynchronous loading is that it allows the browser to continue parsing and rendering the HTML without waiting for the script to be downloaded and executed.
+                This can improve page load performance, especially for scripts that are not critical for initial page rendering. </li>
+            </ul>
+            <p>b.	Deferring the Loading of a Script File: </p>
+            <ul>
+                <li>Deferring the loading of a script file means delaying its execution until after the HTML content has been parsed and rendered.</li>
+                <li>The script is still downloaded in the background, but it's not executed until the HTML parsing is complete.</li>
+                <li>Deferring the loading of a script file is typically achieved by using the defer attribute in the script tag, like this: <script defer src="script.js"></script>.</li>
+                <li> main advantage of deferring script loading is that it ensures scripts don't block the rendering of the page,
+                but they still execute in the order they appear in the HTML document after the HTML parsing is complete. </li>
+            </ul>
+            <p>
+               In summary, the main difference is in when the script is executed relative to the HTML parsing process. Asynchronous loading allows the script to execute as soon as it's downloaded,
+               potentially interrupting the HTML parsing process, while deferring the loading of a script ensures that it's executed only after the HTML parsing is complete, without blocking rendering.
+            </p>
+        </div>
+        
+        <div class="question">
+    <h3>4. Provide code to insert the following comment text in a JavaScript file:</h3>
+    <pre>
+        /* Tulsa New Year's Bash
+        
+        Clock Functions */
+        
+        // Call the showClock() function to display the current date and time
+        showClock();
+        
+        // Run the showClock() function every second to update the clock in real-time
+        setInterval("showClock()", 1000);
+        
+        /* Function to create and run the countdown clock */
+        function showClock() {
+            // Step a & b: Store the current date and time
+            var thisDay = new Date();
+            var localDate = thisDay.toLocaleDateString();
+            var localTime = thisDay.toLocaleTimeString();
+        
+            // Step c: Display the current date and time
+            document.getElementById("currentTime").innerHTML = "&lt;span&gt;" + localDate + "&lt;/span&gt;&lt;span&gt;" + localTime + "&lt;/span&gt;";
+        
+            // Call the nextNewYears() function and store the returned date in the nyDate variable
+            var nyDate = nextNewYears(thisDay);
+        
+            // Set the hours value of nyDate to 9 p.m.
+            nyDate.setHours(21);
+        
+            // Step f: Calculate the days, hours, minutes, and seconds until New Year's at 9 p.m.
+            var days = (nyDate - thisDay) / (1000 * 60 * 60 * 24);
+            var hrs = (days - Math.floor(days)) * 24;
+            var mins = (hrs - Math.floor(hrs)) * 60;
+            var secs = (mins - Math.floor(mins)) * 60;
+        
+            // Step g: Display the time left until New Year's at 9 p.m.
+            document.getElementById("dLeft").textContent = Math.floor(days);
+            document.getElementById("hLeft").textContent = Math.floor(hrs);
+            document.getElementById("mLeft").textContent = Math.floor(mins);
+            document.getElementById("sLeft").textContent = Math.floor(secs);
+        }
+        
+        /* Function to find the date of the next New Year's */
+        function nextNewYears(currentDate) {
+            var cYear = currentDate.getFullYear();
+            var nyDate = new Date("January 1, 2024");
+            nyDate.setFullYear(cYear + 1);
+            return nyDate;
+        }
+         </pre>
+     </div>
+        
+        <div class="question">
+        <h3>5.	Provide the command to display an alert dialog box with the message &ldquo;Happy New Year!&rdquo;:</h3>
+            <p>
+             alert("Happy New Year!");
+            </p>
+        </div>
+        
+        <div class="question">
+        <h3>6.	What will be the result of running the following JavaScript command: WINDOW.ALERT(&ldquo;Page Loaded&rdquo;);</h3>
+        <p>
+         The JavaScript command WINDOW.ALERT("Page Loaded"); will display an alert dialog box with the message "Page Loaded".
+        </p>
+        <p>
+         However, there is a syntax error in the command. In JavaScript, object properties and methods are case-sensitive. Therefore, it should be window.alert("Page Loaded"); 
+         instead of WINDOW.ALERT("Page Loaded");.
+        </p>
+        <p>
+         This command will trigger an alert dialog with the message "Page Loaded" when executed.</p
+         </div>
+         
+        <div class="question">
+        <h3>7. What is a breakpoint and why would you use a breakpoint in debugging your code?</h3>
+        <p>
+         Breakpoints are essential tools in software development for pausing the execution of a program at specific points in the code. They provide developers with valuable insights into the program's behavior by allowing them to inspect variables, understand program flow, and identify bugs more effectively.
+         By pausing execution, developers can analyze the state of the program at that moment, making it easier to diagnose issues and track down the source of errors. Breakpoints also enable developers to test specific conditions, analyze performance, and optimize code for better efficiency.
+         Overall, breakpoints play a crucial role in debugging by empowering developers to understand and improve the functionality and performance of their code.
+        </p>
+        </div>
+        
+        <div class="question">
+        <h3>8.	What statement would be added to your JavaScript file to ensure that your code is strictly interpreted?</h3>
+        <p>
+         "use strict";
+        </p>
+        </div>
+        
+</body>
+
+</html>
